@@ -1,0 +1,14 @@
+sudo apt install lxc
+скачиваем контейнеры
+
+sudo lxc-create -t download -n conteiner1 -- -d kali -r current -a amd64  
+sudo lxc-create -t download -n conteiner2 -- -d kali -r current -a amd64  
+создаем 2 контейнера, указываем  релиз и архитектуру
+
+sudo lxc-start conteiner1
+sudo lxc-start conteiner2
+запускаем 2 контейнера 
+
+sudo lxc-ls -f  
+проверяем, работают ли контейнеры:
+все хорошо статус : Running
